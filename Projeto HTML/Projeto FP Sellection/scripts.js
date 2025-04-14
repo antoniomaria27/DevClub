@@ -11,12 +11,13 @@ let firstPosition = 0
 let lastPosition = items.length - 1
 
 function setSlider() {
-    
+
     let intemold = container.querySelector('.list .item.active')
-    intemold.classList.remove ('active')
+    intemold.classList.remove('active')
 
     let dotsOld = indicator.querySelector('ul li.active')
     dotsOld.classList.remove('active')
+    
     dots[active].classList.add('active')
 
     indicator.querySelector('.number').innerText = '0'(active) + 1
