@@ -63,7 +63,7 @@ section {
                     transform: rotate(-30deg);
                 }
 
-                &::before{
+                &::before {
                     content: '';
                     position: absolute;
                     background-color: #000;
@@ -116,8 +116,8 @@ section {
                     font-weight: bold;
                     font-family: "League Gothic", sans-serif;
                 }
-            
-            }  
+
+            }
         }
 
         &::before {
@@ -155,8 +155,8 @@ section {
 
             & img {
                 width: 30px;
-                margin-top: 4px;  
-                cursor: pointer;          
+                margin-top: 4px;
+                cursor: pointer;
             }
 
             &:hover {
@@ -164,9 +164,9 @@ section {
             }
         }
 
-       
 
-       
+
+
     }
 
     .indicators {
@@ -205,19 +205,20 @@ section {
     }
 }
 
-section{
+section {
 
-    &.list {
-    --calculation: 1
-    }
+    & .list {
+        --calculation: 1;
 
-        & .item{
+
+        & .item {
             transform: translateX(calc(100vw * var(--calculation)));
             transition: 0.5s;
             opacity: 0;
 
-            & .car-img{
-                & img{
+            & .car-img {
+
+                & img {
                     transform: rotate(0);
                     transition: 0.5s;
                     transition-delay: 0.3s;
@@ -226,35 +227,38 @@ section{
 
             & .content {
 
-                & .car-informatio, h2, .description, .information {
+                & .car-informatio,
+                h2,
+                .description,
+                .information {
                     transform: translateX(calc(200px * var(--calculation)));
                     transition: 0.7s;
                     transition-delay: 0.3s;
                     opacity: 0;
                 }
 
-                & h2{
+                & h2 {
                     transition-delay: 0.5s;
                 }
 
-                & .description{
+                & .description {
                     transition-delay: 0.7s;
                 }
 
-                & .information{
+                & .information {
                     transition-delay: 0.9s;
                 }
             }
 
         }
 
-        & .active{
+        & .active {
             transform: translateX(0);
             transition: 0.5s;
             opacity: 1;
 
-            & .car-img{
-                & img{
+            & .car-img {
+                & img {
                     transform: rotate(-20deg);
 
                 }
@@ -263,12 +267,16 @@ section{
 
             & .content {
 
-                & .car-informatio, h2, .description, .information {
+                & .car-informatio,
+                h2,
+                .description,
+                .information {
                     transform: translateX(0);
                     opacity: 1;
                 }
 
-        }
+            }
 
+        }
     }
 }
