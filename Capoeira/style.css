@@ -1,45 +1,106 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #4169e1, #1e90ff, #00BFFF);
     color: #fff;
 }
 
-header{
+header {
     background: linear-gradient(to right, #ADD8E6, #87CEEB, #87CEFA);
     color: #000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 17px 1rem;  
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 0.6s;
+    z-index: 1000;
 }
 
-nav{
+header.shrink {
+    padding: 5px;
+}
+
+
+nav {
     display: flex;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #000;
     margin: 0 15px;
     font-weight: 600;
     align-items: center;
     font-size: 1.5rem;
+
+    &:hover {
+        opacity: 0.4;
+    }
 }
 
-    img{
-        margin-left: 18rem;
+img {
+    margin-left: 18rem;
+}
+
+h1 {
+    font-size: 50px;
+    margin-right: 18rem;
+}
+
+.start {
+    display: flex;
+    color: #000;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+
+    & #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & button {
+            margin-bottom: 5rem;
+            margin-top: 3rem;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 30px;
+            background: linear-gradient(to right, #708090, #B0C4DE, #4682B4);
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+        h1 {
+            margin-top: 50px;
+            margin-left: 25%;
+            font-size: 4.8rem;
+            margin-bottom: 25px;
+        }
+
+        & p {
+            font-size: 25px;
+            margin-left: 4rem;
+        }
+
+        & img {
+            width: 50vw;
+            height: 65vh;
+            margin-right: 15rem;
+        }
     }
-
-    h1{
-        font-size: 50px;
-        margin-right: 18rem;
-    }
-
-
+}
